@@ -74,8 +74,8 @@ html, body {
   box-sizing: border-box;
 }
 .audio-player audio {
-	box-sizing: border-box;
-	box-shadow: none;
+  margin: 0 auto;
+  width: 300px;
 }
 
 .audio-player figcaption {
@@ -195,6 +195,11 @@ html, body {
   justify-content: center;
 }
 
+.audio-player audio {
+  margin: 0 auto;
+  width: 200px;
+}
+
 .social {
   width: 100%;
   position: absolute;
@@ -204,8 +209,89 @@ html, body {
 }
 
 .social img {
-  height: 18px;
-  width: 18px;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+  .navigation nav a {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 8px;
+    letter-spacing: 5spx;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.welcome-title {
+  position: absolute;
+  top: 78%;
+  right: 0px;
+  margin-right: 20px;
+  height: 100px;
+  width: 100%;
+  padding: inherit;
+  cursor: default;
+}
+
+.name {
+  width: 100%;
+  padding: inherit;
+  margin: 0px;
+  text-align: right;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+.year {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  right: 30px;
+  text-align: right;
+  color: #FFF;
+  font-size: 8px;
+  letter-spacing: 5px;
+  line-height: 4px;
+}
+
+.audio-player {
+  width: 100%;
+  margin: 0 auto;
+  top: 20%;
+  text-align: center;
+  justify-content: center;
+}
+
+.audio-player audio {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.social {
+  width: 100%;
+  position: absolute;
+  margin-bottom: 0px;
+  left: 0px;
+  bottom: 10px;
+}
+
+.social img {
+  height: 20px;
+  width: 20px;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
